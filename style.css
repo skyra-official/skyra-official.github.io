@@ -2,9 +2,10 @@
 html {
   scroll-behavior: smooth;
 }
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 .navbar {
   z-index: 10;
@@ -17,7 +18,7 @@ body {
   /* color: #f5f5f7; */
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blu(20px);
-  background: rgba(251,251,253,0.8);
+  background: rgba(251, 251, 253, 0.8);
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   padding: 10px 0;
@@ -182,6 +183,7 @@ body {
   letter-spacing: 1px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+  margin: 14px 0;
   /* animation: fade linear;
   animation-timeline: view();
   animation-range: entry 50% cover 50%; */
@@ -224,8 +226,19 @@ body {
     font-size: 12px;
   }
 }
-.product{
+.product {
   min-height: 100vh;
   background: #000;
   color: white;
+}
+.card{
+  position: sticky;
+  top: 0;
+  border: 5px solid white;
+}
+.footer{
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
