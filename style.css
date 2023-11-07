@@ -205,9 +205,12 @@ html {
   gap: 20px;
 }
 @media (max-width: 600px) {
+  .about{
+    gap: 50px;
+  }
   .about .about-image img {
     width: 300px;
-    margin-top: 150px;
+    margin-top: 50px;
   }
   .about .about-para {
     margin: 0 0 100px 0;
