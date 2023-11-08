@@ -12,38 +12,117 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        background: #000;
+      }
+      body {
+        height: 100vh;
+        background: linear-gradient(
+          135deg,
+          #140928,
+          #5827ae,
+          #200e3f,
+          #1a0a38,
+          #000
+        );
+        /* background: linear-gradient(to right, #B59BE8, #5827ae, #14091f);  */
+        animation: gradientAnimation 10s linear infinite alternate;
+        background-size: 400% 400%;
         color: #f5f5f7;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
           sans-serif;
       }
-      .coming {
-        height: 100vh;
-        text-align: center;
-        background: url(./img/bg.png);
-        background-size: cover;
-        background-repeat: no-repeat;
+      .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30%;
+        padding-top: 50px;
+        margin: 0 18px;
       }
-      .coming h3 {
-        font-size: 48px;
-        padding-top: 40vh;
-        background: transparent;
+      .navbar h1 a {
+        color: #f5f5f7;
+        text-decoration: none;
+      }
+      .navbar .navbar-elements a {
+        color: #f5f5f7;
+        margin: 0 16px;
+        text-decoration: none;
+      }
+      .coming {
+        margin-left: 13%;
+        margin-top: 30vh;
       }
       .coming p {
-        font-size: 24px;
-        background: transparent;
+        font-size: 28px;
+        font-weight: 100;
       }
       .coming h1 {
-        font-size: 80px;
+        font-size: 58px;
+        margin-top: 20px;
+        font-weight: 500;
+      }
+      .end {
+        margin-top: 20vh;
+        text-align: center;
+      }
+      .end p {
+        font-size: 28px;
+        font-weight: 100;
+      }
+      .end h1 {
+        font-size: 58px;
+        margin-top: 14px;
+        font-weight: 500;
+      }
+      .circle {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 150px;
+        height: 150px;
+        background: #000;
+        border-radius: 50%;
+      }
+      @media(max-width:800px) {
+        .coming{
+          margin-left: 30px;
+        }
+        p{
+          font-size: 20px;
+        }
+        h1{
+          font-size: 38px;
+        }
+        
       }
     </style>
   </head>
   <body>
+    <div class="cirlce"></div>
+
+    <div class="navbar">
+      <h1><a href="#">SKY.RA</a></h1>
+
+      <div class="navbar-elements">
+        <a href="#">Home</a>
+        <a href="#">Team</a>
+      </div>
+
+      <!-- extra div for alignment -->
+      <div></div>
+    </div>
+
     <div class="coming">
-      <h3 data-aos="fade-up">SKY.RA</h3>
-      <br />
-      <p data-aos="fade-up" data-aos-duration="1000">Elevate your visions with us.</p>
-      <!-- <h1 data-aos="fade-up">We are Coming Soon...</h1> -->
+      <!-- <div>/ -->
+        <p>Get Ready!</p>
+        <h1>We Are Coming Soon...</h1>
+      <!-- </div> -->
+      <!-- <div></div> -->
+    </div>
+
+    <div class="end">
+      <p>Elevate your vision with Us.</p>
+      <h1>SKY.RA</h1>
     </div>
   </body>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
