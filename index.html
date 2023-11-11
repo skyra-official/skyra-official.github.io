@@ -4,327 +4,205 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sky.Ra</title>
-    <link rel="stylesheet" href="style.css" />
 
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&family=Roboto:wght@400&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- animate on scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        /* background: linear-gradient(
+          135deg,
+          #140928,
+          #5827ae,
+          #200e3f,
+          #1a0a38,
+          #000
+        ); */
+        /* background: linear-gradient(to right, #B59BE8, #5827ae, #14091f);  */
+        background: #000;
+        /* animation: gradientAnimation 10s linear infinite alternate; */
+        /* background-size: 400% 400%; */
+        color: #f5f5f7;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      } /* Made by Arshpreet Singh Bedi */
+
+      .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 70%;
+        padding-top: 50px;
+        margin: 0 18px;
+      }
+      .navbar h1 a {
+        color: #f5f5f7;
+        text-decoration: none;
+        font-size: 32px;
+        /* arshbedi2517@gmail.com */
+      }
+      .navbar .navbar-elements a {
+        color: #f5f5f7;
+        margin: 0 16px;
+        text-decoration: none;
+        font-size: 16px;
+      }
+      .navbar a:hover {
+        color: #823aff;
+      }
+      .coming {
+        margin: 20vh 30px 0 30px;
+        display: flex;
+        gap: 150px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .coming img {
+        height: 300px;
+      }
+      .coming p {
+        font-size: 28px;
+        font-weight: 100;
+      } /* Made by Arshpreet Singh Bedi */
+
+      .coming h1 {
+        font-size: 58px;
+        margin-top: 20px;
+        font-weight: 500;
+      }
+      .end {
+        margin-top: 12vh;
+        text-align: center;
+      }
+      .end p {
+        font-size: 28px;
+        font-weight: 100;
+      }
+      .end h1 {
+        font-size: 58px;
+        margin-top: 14px;
+        font-weight: 500;
+      }
+      @media (max-width: 1390px) {
+        .navbar h1 a {
+          font-size: 28px;
+        }
+        .navbar .navbar-elements a {
+          font-size: 16px;
+        }
+        .coming {
+          margin-top: 10vh;
+          gap: 100px;
+        }
+        .coming img {
+          height: 250px;
+        }
+        .coming p,
+        .end p {
+          font-size: 20px;
+        }
+        /* arshbedi2517@gmail.com */
+        .coming h1,
+        .end h1 {
+          font-size: 38px;
+        }
+      }
+      @media (max-width: 1035px) {
+        .navbar h1 a {
+          font-size: 22px;
+        }
+        .navbar .navbar-elements a {
+          font-size: 14px;
+        }
+        .coming {
+          gap: 50px;
+        }
+        .coming img {
+          height: 180px;
+        }
+      } /* Made by Arshpreet Singh Bedi */
+
+      @media (max-width: 850px) {
+        .navbar {
+          padding-top: 30px;
+        }
+        .navbar h1 a {
+          font-size: 20px;
+        }
+        .navbar .navbar-elements a {
+          font-size: 14px;
+        }
+        .coming {
+          gap: 40px;
+        }
+        .coming img {
+          height: 150px;
+        }
+        .coming p,
+        .end p {
+          font-size: 16px;
+          /* arshbedi2517@gmail.com */
+        }
+        .coming h1,
+        .end h1 {
+          font-size: 30px;
+        }
+      }
+      @media (max-width: 450px) {
+        .navbar {
+          gap: 50px;
+        }
+        .navbar h1 a {
+          font-size: 18px;
+        }
+        .coming h1,
+        .end h1 {
+          font-size: 24px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <!-- navbar -->
-    <div class="navbar" data-aos="fade-down">
-      <a href="#particles-js"><h1>SKY.RA</h1></a>
-      <div class="navbar-item">
-        <a href="#particles-js">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <i class="fas fa-chevron-down" id="show"></i>
-      <i class="fas fa-chevron-right" id="hide" style="display: none"></i>
+    <!-- Made by Arshpreet Singh Bedi -->
+    <div class="navbar">
+      <h1><a href="/">SKY.RA</a></h1>
 
-      <button id="preorder">Buy</button><br />
-      <div id="on-open" style="display: none">
-        <a href="#particles-js">Home</a><br />
-        <a href="#about">About</a><br />
-        <a href="#contact">Contact</a><br />
+      <div class="navbar-elements">
+        <a href="/">Home</a>
+        <a href="/team.html">Team</a>
+      </div>
+    </div>
+    <!-- arshbedi2517@gmail.com -->
+
+    <div class="coming">
+      <div>
+        <img src="./img/vizar1.jpeg" alt="" />
+      </div>
+      <div>
+        <!-- <p>Get Ready!</p>
+        <h1>We Are <span style="color: #823aff">Coming</span> Soon...</h1> -->
+        <p><span style="color: #823aff">Get Ready!</span></p>
+        <h1>To Tap Into The Future...</h1>
       </div>
     </div>
 
-    <!-- home -->
-    <div id="particles-js" class="home">
-      <!-- <h1>SKY.RA</h1> -->
-      <img src="./img/logo.png" class="App-logo" alt="logo" />
-      <div class="texts">
-        <p>EST.</p>
-        <p>2023</p>
-      </div>
-
+    <div class="end">
       <h1>SKY.RA</h1>
-      <p>REALITY BUT AUGMENTED</p>
+      <p>Elevate your <span style="color: #823aff">vision</span> with Us.</p>
     </div>
-
-    <!-- about -->
-    <div id="about" class="about">
-      <div class="about-image" data-aos="flip-right" data-aos-duration="3000">
-        <img src="./img/aboutGif1.gif" alt="gif" />
-      </div>
-      <!-- arshbedi2517@gmail.com -->
-      <div class="about-para">
-        <h1 data-aos="fade-right">Features of SKY.RA</h1>
-        <div>
-          <div class="about-element" data-aos="fade-right">
-            <i class="fa fa-bullseye"></i>
-            <p>
-              <b>Clear Value Proposition: </b>Your product should clearly
-              communicate its unique benefits, making it evident how it solves a
-              problem or fulfills a need for users.
-            </p>
-          </div>
-    <!-- Made by Arshpreet Singh Bedi -->
-
-          <div class="about-element" data-aos="fade-right">
-            <i class="fa fa-desktop"></i>
-            <p>
-              <b>User-Friendly Interface: </b>Prioritize an intuitive and
-              user-friendly design to ensure that users can easily navigate your
-              product without confusion or frustration.
-            </p>
-          </div>
-
-          <div class="about-element" data-aos="fade-right">
-            <i class="fa fa-rocket"></i>
-            <p>
-              <b>High-Quality Performance: </b>Deliver a reliable and responsive
-              product with minimal bugs, ensuring that it consistently performs
-              at its best.
-            </p>
-          </div>
-
-          <div class="about-element" data-aos="fade-right">
-            <i class="fa fa-comments"></i>
-            <p>
-              <b>Feedback and Srightport: </b>Provide accessible channels for
-              users to seek help and offer feedback, fostering a positive and
-              srightportive user experience.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Made by Arshpreet Singh Bedi -->
-    <!-- product -->
-    <div class="product" id="product">
-      <div class="card">
-        <div class="about">
-          <div
-            class="about-image"
-            data-aos="flip-right"
-            data-aos-duration="3000"
-          >
-            <img src="./img/aboutGif1.gif" alt="gif" />
-          </div>
-          <div class="about-para">
-            <h1 data-aos="fade-right">Features of SKY.RA</h1>
-            <div>
-              <div class="about-element" data-aos="fade-right">
-                <i class="fa fa-bullseye"></i>
-                <p>
-                  <b>Clear Value Proposition: </b>Your product should clearly
-                  communicate its unique benefits, making it evident how it
-                  solves a problem or fulfills a need for users.
-                </p>
-              </div>
-      <!-- arshbedi2517@gmail.com -->
-
-              <div class="about-element" data-aos="fade-right">
-                <i class="fa fa-desktop"></i>
-                <p>
-                  <b>User-Friendly Interface: </b>Prioritize an intuitive and
-                  user-friendly design to ensure that users can easily navigate
-                  your product without confusion or frustration.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="about">
-          <div
-            class="about-image"
-            data-aos="flip-right"
-            data-aos-duration="3000"
-          >
-            <img src="./img/aboutGif1.gif" alt="gif" />
-          </div>
-          <div class="about-para">
-            <h1 data-aos="fade-right">Features of SKY.RA</h1>
-            <div>
-              <div class="about-element" data-aos="fade-right">
-                <i class="fa fa-bullseye"></i>
-                <p>
-                  <b>Clear Value Proposition: </b>Your product should clearly
-                  communicate its unique benefits, making it evident how it
-                  solves a problem or fulfills a need for users.
-                </p>
-              </div>
-
-              <div class="about-element" data-aos="fade-right">
-                <i class="fa fa-desktop"></i>
-                <p>
-                  <b>User-Friendly Interface: </b>Prioritize an intuitive and
-                  user-friendly design to ensure that users can easily navigate
-                  your product without confusion or frustration.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      <!-- arshbedi2517@gmail.com -->
-      </div>
-      <div class="card">
-        <div class="about">
-          <div
-            class="about-image"
-            data-aos="flip-right"
-            data-aos-duration="3000"
-          >
-            <img src="./img/aboutGif1.gif" alt="gif" />
-          </div>
-          <div class="about-para">
-            <h1 data-aos="fade-right">Features of SKY.RA</h1>
-            <div>
-              <div class="about-element" data-aos="fade-right">
-                <i class="fa fa-bullseye"></i>
-                <p>
-                  <b>Clear Value Proposition: </b>Your product should clearly
-                  communicate its unique benefits, making it evident how it
-                  solves a problem or fulfills a need for users.
-                </p>
-              </div>
-    <!-- Made by Arshpreet Singh Bedi -->
-
-              <div class="about-element" data-aos="fade-right">
-                <i class="fa fa-desktop"></i>
-                <p>
-                  <b>User-Friendly Interface: </b>Prioritize an intuitive and
-                  user-friendly design to ensure that users can easily navigate
-                  your product without confusion or frustration.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- footer -->
-    <footer class="footer">footer</footer>
   </body>
-  <script src="main.js"></script>
+  <!-- Made by Arshpreet Singh Bedi -->
 
-  <!-- animate on scroll -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
   <script>
     AOS.init();
   </script>
-      <!-- arshbedi2517@gmail.com -->
-
-  <!-- gsap, scroll trigger -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script> -->
-  <!-- <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenōis@1.0.27/bundled/lenis.min.js"></script> -->
-    <!-- Made by Arshpreet Singh Bedi -->
-
-  <!-- <script>
-    gsap.from(".about-image", {
-      opacity: 0,
-      x: -800,
-      duration: 1,
-      scrollTrigger: {
-        trigger: ".about-image",
-        start: "5% center",
-        end: "bottom center",
-        // markers: true,
-        toggleActions: "play none none reverse",
-      },
-    });
-    gsap.to(".about-image", {
-      opacity: 1,
-      x: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: ".about-image",
-        start: "5% center",
-        end: "bottom center",
-        // markers: true,
-        toggleActions: "play none none reverse",
-      },
-    });
-
-    gsap.from(".about-para", {
-      opacity: 0,
-      x: 800,
-      duration: 1,
-      scrollTrigger: {
-        trigger: ".about-para",
-        start: "10% center",
-        end: "bottom center",
-        // markers: true,
-        toggleActions: "play none none reverse",
-      },
-    });
-    gsap.to(".about-para", {
-      opacity: 1,
-      x: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: ".about-para",
-        start: "10% center",
-        end: "bottom center",
-        // markers: true,
-        toggleActions: "play none none reverse",
-      },
-    });
-
-    // let tl = gsap.timeline({
-    //   scrollTrigger: {
-    //     trigger: ".about-image",
-    //     start: "top center",
-    //     end: "bottom center",
-    //     scrub: true,
-    //     // markers: true,
-    //   },
-    // });
-    // tl.to(".about-image", {
-    //   x: -200,
-    // });
-
-    // let tl2 = gsap.timeline({
-    //   scrollTrigger: {
-    //     trigger: ".about-para",
-    //     start: "top center",
-    //     end: "bottom center",
-    //     scrub: true,
-    //     // markers: true,
-    //   },
-    // });
-    // tl2.to(".about-para", {
-    //   x: 200,
-    // });
-
-    //smooth scroll
-    // const lenis = new Lenis();
-
-    // lenis.on("scroll", (e) => {
-    //   console.log(e);
-    // });
-
-    // function raf(time) {
-    //   lenis.raf(time);
-    //   requestAnimationFrame(raf);
-    // }
-
-    // requestAnimationFrame(raf);
-  </script> -->
-      <!-- arshbedi2517@gmail.com -->
-
-  <!-- particle js -->
-  <script src="particles.js"></script>
-  <script src="app.js"></script>
 </html>
-    <!-- Made by Arshpreet Singh Bedi -->
+<!-- arshbedi2517@gmail.com -->
