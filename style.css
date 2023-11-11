@@ -6,6 +6,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+/* arshbedi2517@gmail.com */
 }
 .navbar {
   z-index: 10;
@@ -34,6 +35,7 @@ html {
   text-align: right;
   font-size: 15px;
 }
+/* Made by Arshpreet Singh Bedi */
 .navbar a {
   text-decoration: none;
   color: #1d1d1f;
@@ -63,6 +65,7 @@ html {
   border-top: 1px solid #dfdfdf;
   width: 100%;
 }
+/* Made by Arshpreet Singh Bedi */
 
 @media (max-width: 500px) {
   .navbar h1 {
@@ -93,6 +96,7 @@ html {
   to {
     transform: translateY(0);
   }
+/* Made by Arshpreet Singh Bedi */
 }
 .App-logo {
   pointer-events: none;
@@ -110,6 +114,7 @@ html {
   }
   to {
     transform: rotate(360deg);
+/* arshbedi2517@gmail.com */
   }
 }
 .home h1 {
@@ -151,6 +156,7 @@ html {
     height: 200px;
   }
 }
+/* Made by Arshpreet Singh Bedi */
 
 /* about */
 .about {
@@ -168,7 +174,7 @@ html {
   box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
   border-radius: 50px;
 }
-
+/* arshbedi2517@gmail.com */
 .about-para {
   margin: 150px 0;
   width: 500px;
@@ -187,6 +193,7 @@ html {
   /* animation: fade linear;
   animation-timeline: view();
   animation-range: entry 50% cover 50%; */
+/* arshbedi2517@gmail.com */
 }
 @keyframes fade {
   from {
@@ -195,6 +202,7 @@ html {
   to {
     opacity: 1;
   }
+/* Made by Arshpreet Singh Bedi */
 }
 .about-para i {
   font-size: 40px;
@@ -227,6 +235,7 @@ html {
   }
   .about .about-para p {
     font-size: 12px;
+/* Made by Arshpreet Singh Bedi */
   }
 }
 .product {
@@ -244,4 +253,5 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+/* Made by Arshpreet Singh Bedi */
 }
