@@ -3,7 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Description" content="Here we make Augmented Reality reachable to every sector without breaking the bank. #RealityButAugmented">
+    <meta
+      name="Description"
+      content="Here we make Augmented Reality reachable to every sector without breaking the bank. #RealityButAugmented"
+    />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0K1Z5D0VV1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-0K1Z5D0VV1");
+    </script>
 
     <title>Sky.ra</title>
     <!-- google fonts -->
@@ -17,7 +35,7 @@
     <!-- animation on scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <link rel="icon" type="image/x-icon" href="./img/fav2.png">
+    <link rel="icon" type="image/x-icon" href="./img/fav2.png" />
 
     <style>
       * {
@@ -98,7 +116,7 @@
         align-items: center;
         gap: 120px;
       }
-      .footer img{
+      .footer img {
         width: 170px;
       }
       @media (max-width: 1080px) {
@@ -106,11 +124,11 @@
           gap: 50%;
         }
       }
-      @media(max-width: 930px) {
-        .footer{
+      @media (max-width: 930px) {
+        .footer {
           gap: 80px;
         }
-        .footer img{
+        .footer img {
           width: 170px;
         }
       }
@@ -118,24 +136,24 @@
         .navbar {
           gap: 20%;
         }
-        .navbar h1 a img{
+        .navbar h1 a img {
           width: 120px;
         }
-        #topHeading{
+        #topHeading {
           font-size: 44px;
         }
-        .footer{
+        .footer {
           gap: 50px;
         }
-        .footer img{
+        .footer img {
           width: 170px;
         }
       }
-      @media(max-width: 450px){
-        .footer img{
+      @media (max-width: 450px) {
+        .footer img {
           width: 100px;
         }
-        .footer{
+        .footer {
           gap: 30px;
         }
       }
@@ -143,10 +161,10 @@
         .navbar {
           gap: 35px;
         }
-        .navbar h1 a img{
+        .navbar h1 a img {
           width: 90px;
         }
-        .navbar .navbar-elements a{
+        .navbar .navbar-elements a {
           font-size: 14px;
         }
       }
@@ -154,7 +172,9 @@
   </head>
   <body>
     <div class="navbar" data-aos="fade-down" data-aos-duration="2000">
-      <h1><a href="/"><img src="./img/skyra2.png" alt="" width="150px"></a></h1>
+      <h1>
+        <a href="/"><img src="./img/skyra2.png" alt="" width="150px" /></a>
+      </h1>
 
       <div class="navbar-elements">
         <a href="/">Home</a>
@@ -226,9 +246,8 @@
     </div>
 
     <div class="footer">
-      
-      <img src="./img/msme.jpg" alt="">
-      <img src="./img/skyra.png" alt="">
+      <img src="./img/msme.jpg" alt="" />
+      <img src="./img/skyra.png" alt="" />
     </div>
   </body>
   <!-- animation on scroll -->
