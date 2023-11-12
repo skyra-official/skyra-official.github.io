@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sky.Ra</title>
+    <title>SKY.RA</title>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,7 +30,7 @@
         justify-content: center;
         align-items: center;
         gap: 70%;
-        padding-top: 50px;
+        padding-top: 30px;
         margin: 0 18px;
       }
       .navbar h1 a {
@@ -51,12 +51,12 @@
         color: #823aff;
       }
       #topHeading {
-        margin-top: 5vh;
+        margin-top: 4vh;
         text-align: center;
         font-size: 60px;
       }
       .cards {
-        margin: 6vh 30px 0 30px;
+        margin: 4vh 30px 0 30px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -88,7 +88,7 @@
       .footer {
         text-align: center;
         margin-top: 8vh;
-        margin-bottom: 5vh;
+        margin-bottom: 3vh;
       }
       .footer h1 {
         font-family: "Roboto", sans-serif;
@@ -98,26 +98,38 @@
         font-family: "Poppins", sans-serif;
         font-size: 18px;
       }
-      @media (max-width: 920px) {
+      @media (max-width: 1080px) {
         .navbar {
           gap: 50%;
         }
       }
-      @media (max-width: 569px) {
+      @media (max-width: 660px) {
         .navbar {
           gap: 20%;
         }
+        .navbar h1 a img{
+          width: 120px;
+        }
+        #topHeading{
+          font-size: 44px;
+        }
+        .footer img{
+          width: 250px;
+        }
       }
-      @media (max-width: 375px) {
+      @media (max-width: 396px) {
         .navbar {
-          gap: 5%;
+          gap: 10px;
+        }
+        .navbar h1 a img{
+          width: 90px;
         }
       }
     </style>
   </head>
   <body>
-    <div class="navbar" data-aos="fade-down">
-      <h1><a href="/">SKY.RA</a></h1>
+    <div class="navbar" data-aos="fade-down" data-aos-duration="2000">
+      <h1><a href="/"><img src="./img/skyra2.png" alt="" width="150px"></a></h1>
 
       <div class="navbar-elements">
         <a href="/">Home</a>
@@ -189,8 +201,9 @@
     </div>
 
     <div class="footer">
-      <h1>SKY.RA</h1>
-      <p>Reality But <span style="color: #823aff">Augmented</span></p>
+      <!-- <h1>SKY.RA</h1>
+      <p>Reality But <span style="color: #823aff">Augmented</span></p> -->
+      <img src="./img/skyra.png" alt="" width="300px">
     </div>
   </body>
   <!-- animation on scroll -->

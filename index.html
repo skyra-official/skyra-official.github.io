@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sky.Ra</title>
+    <title>SKY.RA</title>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
@@ -57,7 +57,7 @@
         color: #823aff;
       }
       .coming {
-        margin: 20vh 30px 0 30px;
+        margin: 12vh 30px 0 30px;
         display: flex;
         gap: 150px;
         flex-wrap: wrap;
@@ -78,8 +78,8 @@
         font-weight: 500;
       }
       .end {
-        margin-top: 12vh;
-        margin-bottom: 5vh;
+        margin-top: 14vh;
+        margin-bottom: 6vh;
         text-align: center;
       }
       .end p {
@@ -90,6 +90,13 @@
         font-size: 58px;
         margin-top: 14px;
         font-weight: 500;
+      }
+      .logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 120px;
+        padding-bottom: 20px;
       }
       @media (max-width: 1390px) {
         .coming {
@@ -113,6 +120,7 @@
       @media (max-width: 820px) {
         .navbar {
           padding-top: 30px;
+          gap: 40%;
         }
         .coming img {
           height: 220px;
@@ -130,7 +138,7 @@
       }
       @media (max-width: 569px) {
         .navbar{
-          gap: 40%;
+          gap: 20%;
         }
         .coming img {
           height: 200px;
@@ -138,12 +146,15 @@
         .end {
           margin-top: 8vh;
         }
+        .logos{
+          gap: 50px;
+        }
       }
       @media (max-width: 450px) {
         .navbar {
           gap: 50px;
         }
-        .navbar h1 a img{
+        .navbar h1 a img {
           width: 120px;
         }
         .navbar h1 a {
@@ -165,11 +176,11 @@
         .navbar {
           gap: 30px;
         }
-        .navbar h1 a img{
+        .navbar h1 a img {
           width: 90px;
         }
         .coming img {
-          height: 150px;
+          height: 140px;
         }
         .coming h1,
         .end h1 {
@@ -185,7 +196,9 @@
   <body>
     <!-- Made by Arshpreet Singh Bedi -->
     <div class="navbar" data-aos="fade-down" data-aos-duration="2000">
-      <h1><a href="/"><img src="./img/skyra2.png" alt="" width="150px"></a></h1>
+      <h1>
+        <a href="/"><img src="./img/skyra2.png" alt="" width="150px" /></a>
+      </h1>
 
       <div class="navbar-elements">
         <a href="/">Home</a>
@@ -202,13 +215,20 @@
         <!-- <p>Get Ready!</p>
         <h1>We Are <span style="color: #823aff">Coming</span> Soon...</h1> -->
         <p>Get Ready To Experience!</p>
-        <h1 data-aos="fade-up" data-aos-duration="1000">The <span style="color: #823aff">Future</span> With Us...</h1>
+        <h1 data-aos="fade-up" data-aos-duration="1000">
+          The <span style="color: #823aff; font-weight: 300;">Future</span> With Us...
+        </h1>
       </div>
     </div>
 
     <div class="end">
-      <h1 data-aos="fade-up" data-aos-duration="1000">SKY.RA</h1>
+      <!-- <h1 data-aos="fade-up" data-aos-duration="1000">SKY.RA</h1> -->
       <p>Elevate your <span style="color: #823aff">vision</span> with Us.</p>
+    </div>
+
+    <div class="logos">
+      <img src="./img/msme.png" alt="" width="200px" />
+      <img src="./img/skyra.png" alt="" width="200px" />
     </div>
   </body>
   <!-- Made by Arshpreet Singh Bedi -->
