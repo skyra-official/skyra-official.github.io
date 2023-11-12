@@ -89,18 +89,25 @@
         text-align: center;
         margin-top: 8vh;
         margin-bottom: 3vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 120px;
       }
-      .footer h1 {
-        font-family: "Roboto", sans-serif;
-        margin: 8px 0;
-      }
-      .footer p {
-        font-family: "Poppins", sans-serif;
-        font-size: 18px;
+      .footer img{
+        width: 200px;
       }
       @media (max-width: 1080px) {
         .navbar {
           gap: 50%;
+        }
+      }
+      @media(max-width: 930px) {
+        .footer{
+          gap: 80px;
+        }
+        .footer img{
+          width: 180px;
         }
       }
       @media (max-width: 660px) {
@@ -113,8 +120,19 @@
         #topHeading{
           font-size: 44px;
         }
+        .footer{
+          gap: 50px;
+        }
         .footer img{
-          width: 200px;
+          width: 170px;
+        }
+      }
+      @media(max-width: 450px){
+        .footer img{
+          width: 100px;
+        }
+        .footer{
+          gap: 30px;
         }
       }
       @media (max-width: 396px) {
@@ -204,9 +222,9 @@
     </div>
 
     <div class="footer">
-      <!-- <h1>SKY.RA</h1>
-      <p>Reality But <span style="color: #823aff">Augmented</span></p> -->
-      <img src="./img/skyra.png" alt="" width="300px">
+      
+      <img src="./img/msme.jpg" alt="">
+      <img src="./img/skyra.png" alt="">
     </div>
   </body>
   <!-- animation on scroll -->
